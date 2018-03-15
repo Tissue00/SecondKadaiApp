@@ -18,21 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKC-dN-Ipx">
-                                <rect key="frame" x="192" y="198" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKC-dN-Ipx">
+                                <rect key="frame" x="192" y="200" width="30" height="30"/>
                                 <state key="normal" title="OK"/>
                                 <connections>
                                     <segue destination="DBe-zP-DeL" kind="show" id="2Lh-cZ-WeB"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xvz-7x-5bg">
-                                <rect key="frame" x="157" y="147" width="100" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xvz-7x-5bg">
+                                <rect key="frame" x="157" y="150" width="100" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNj-b0-bnh">
-                                <rect key="frame" x="107" y="94" width="200" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNj-b0-bnh">
+                                <rect key="frame" x="107" y="90" width="200" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -40,10 +40,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="GKC-dN-Ipx" firstAttribute="top" secondItem="Xvz-7x-5bg" secondAttribute="bottom" constant="20" id="1vA-4a-KDR"/>
                             <constraint firstItem="dNj-b0-bnh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="5zj-V6-fVo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GKC-dN-Ipx" secondAttribute="trailing" constant="192" id="9Mr-sY-u9j"/>
                             <constraint firstItem="Xvz-7x-5bg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="IFs-sX-CNK"/>
+                            <constraint firstItem="Xvz-7x-5bg" firstAttribute="top" secondItem="dNj-b0-bnh" secondAttribute="bottom" constant="40" id="MC1-0K-tEx"/>
                             <constraint firstItem="GKC-dN-Ipx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="192" id="cGg-iP-4Rz"/>
+                            <constraint firstItem="dNj-b0-bnh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="d1z-Zh-JlZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dNj-b0-bnh" secondAttribute="trailing" constant="107" id="foK-iE-EuV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xvz-7x-5bg" secondAttribute="trailing" constant="157" id="yU2-ON-RJf"/>
                         </constraints>
@@ -65,15 +68,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53V-Zm-NKT">
-                                <rect key="frame" x="191" y="148" width="32" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53V-Zm-NKT">
+                                <rect key="frame" x="191" y="148" width="32" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="sSu-mR-6ZS" kind="unwind" unwindAction="unwind:" id="GkG-Lj-P3g"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXp-ar-AqC">
-                                <rect key="frame" x="0.0" y="85" width="414" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXp-ar-AqC">
+                                <rect key="frame" x="0.0" y="85" width="414" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -85,6 +88,8 @@
                             <constraint firstItem="53V-Zm-NKT" firstAttribute="leading" secondItem="Bk4-zT-knn" secondAttribute="leading" constant="191" id="P3B-N7-MWp"/>
                             <constraint firstItem="Bk4-zT-knn" firstAttribute="trailing" secondItem="53V-Zm-NKT" secondAttribute="trailing" constant="191" id="XWJ-lt-Lir"/>
                             <constraint firstItem="DXp-ar-AqC" firstAttribute="trailing" secondItem="Bk4-zT-knn" secondAttribute="trailing" id="d0A-gN-bgk"/>
+                            <constraint firstItem="DXp-ar-AqC" firstAttribute="top" secondItem="Bk4-zT-knn" secondAttribute="top" constant="65" id="ma5-ay-6pK"/>
+                            <constraint firstItem="53V-Zm-NKT" firstAttribute="top" secondItem="DXp-ar-AqC" secondAttribute="bottom" constant="42" id="qqt-Ja-AsN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bk4-zT-knn"/>
                     </view>
